@@ -14,17 +14,17 @@ function BookList() {
       },[])
 
     const moveBook = (shelf,book) => {
-          BookApi.update(book, shelf).then(books => {
-              console.log(books)
-          });
+        BookApi.update(book, shelf).then(books => {
+            console.log(books)
+        });
 
-          const updatedBooks = books.map((b) => {
-              if(b.id === book.id){
-                  b.shelf = shelf
-              }
-              return b
-          })
-          setBooks(updatedBooks);
+        const updatedBooks = books.map((b) => {
+            if(b.id === book.id){
+                b.shelf = shelf
+            }
+            return b
+        })
+        setBooks(updatedBooks);
       }
 
     return ( 

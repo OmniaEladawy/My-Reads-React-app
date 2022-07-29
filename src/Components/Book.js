@@ -16,7 +16,7 @@ function Book(props) {
                 </div>
                 <div className="book-title">{props.book.title}</div>
                 <div className="book-authors">
-                    {authors.map((author,index,authors) =>  {
+                    {authors?.map((author,index,authors) =>  {
                     if(index === authors.length-1){
                         return author
                     }else{
