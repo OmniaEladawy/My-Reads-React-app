@@ -3,9 +3,6 @@ import Book from "./Book";
 function BookShelf(props) {
     
     const filteredBooks = props.books.filter((book)=> book.shelf === props.bookShelf.type)
-    console.log(filteredBooks)
-
-     
     
     return ( 
         <div className="bookshelf">

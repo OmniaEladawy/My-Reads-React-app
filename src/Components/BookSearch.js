@@ -9,7 +9,6 @@ function BookSearch() {
     const [searchText,setSearchText] = useState('')
 
     const searchBooks = (query) => { 
-      console.log(query)
       if(query.length > 0){
         BookApi.search(query).then((books)=>{
           if(books.errors){
